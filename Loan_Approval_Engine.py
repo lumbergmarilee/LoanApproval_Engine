@@ -70,9 +70,9 @@ def scoring_algorithm(credit_modifier, loan_amount, loan_period):
     credit_score = (credit_modifier / loan_amount) * loan_period
 
     if (credit_score >= 1):
-        return ("positive", loan_amount)
+        return ("positive", loan_amount, loan_period)
     elif (credit_score < 1):
-        return ("negative",0)
+        return ("negative",0, loan_period)
 
 
 # Helper function for the case when we can't provide any loan amount for the requested loan_period and need to find a new alternative period

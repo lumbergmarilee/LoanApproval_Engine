@@ -1,0 +1,135 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Georgia, serif;
+  background: #fbfbf9;
+  color: #230a3b;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3d2fe;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aa93ff;
+  margin-bottom: 12px;
+}
+
+.id-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.id-row input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1.5px solid #e3d2fe;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.id-row input:focus { border-color: #aa93ff; }
+
+/* Sliders */
+.field { margin-bottom: 18px; }
+.field:last-child { margin-bottom: 0; }
+.field > span { font-size: 14px; display: block; margin-bottom: 6px; }
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider-row input[type="range"] { flex: 1; cursor: pointer; accent-color: #aa93ff; }
+
+.num-input {
+  width: 90px;
+  padding: 6px 8px;
+  border: 1.5px solid #e3d2fe;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 14px;
+  text-align: right;
+  outline: none;
+}
+
+.num-input:focus { border-color: #aa93ff; }
+
+/* Submit */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #aa93ff;
+  color: #230a3b;
+  font: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover { background: #9680f0; }
+.submit-btn:disabled { background: #d9d4a7; cursor: not-allowed; }
+
+/* Results */
+.result { margin-top: 16px; }
+.result-ok { border-color: #aa93ff; background: #e3d2fe; }
+.result-no { border-color: #ff9540; background: #fff4eb; }
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.badge-ok { background: #aa93ff; }
+.badge-no { background: #ff9540; }
+
+.note {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Error */
+.error {
+  margin-top: 16px;
+  padding: 10px 14px;
+  background: #fff4eb;
+  border: 1px solid #ff9540;
+  border-radius: 6px;
+  color: #c56a1a;
+  font-size: 14px;
+}

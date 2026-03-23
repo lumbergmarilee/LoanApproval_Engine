@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Decision Engine</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Loan Decision Engine</h1>
+
+    <div class="card">
+      <label class="label">Applicant</label>
+      <div class="id-row">
+        <input type="text" id="customCode" placeholder="Enter personal code" oninput="clearResult()">
+      </div>
+    </div>
+
+    <div class="card">
+      <label class="label">Loan Parameters</label>
+      <div class="field">
+        <span>Amount (€)</span>
+        <div class="slider-row">
+          <input type="range" id="amountSlider" min="2000" max="10000" step="100" value="5000" oninput="syncAmount(this.value)">
+          <input type="number" id="amountInput" class="num-input" min="2000" max="10000" step="100" value="5000" oninput="syncAmountFromInput(this.value)">
+        </div>
+      </div>
+      <div class="field">
+        <span>Period (months)</span>
+        <div class="slider-row">
+          <input type="range" id="periodSlider" min="12" max="60" step="1" value="36" oninput="syncPeriod(this.value)">
+          <input type="number" id="periodInput" class="num-input" min="6" max="72" step="1" value="36" oninput="syncPeriodFromInput(this.value)">
+        </div>
+      </div>
+    </div>
+
+    <button class="submit-btn" id="submitBtn" onclick="submitLoan()">Check Eligibility</button>
+    <div id="error" class="error" style="display:none"></div>
+    <div id="result"></div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

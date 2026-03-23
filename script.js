@@ -1,3 +1,7 @@
+/* Here I describe the javascript logic for the frontend application */
+
+
+/* Logic for syncing the slider and input box values and getting information from them*/
 function syncAmount(val) {
   document.getElementById("amountInput").value = val;
   clearResult();
@@ -23,6 +27,7 @@ function clearResult() {
   document.getElementById("error").style.display = "none";
 }
 
+/* logic for receiving the answer from engine and presenting it to the user*/
 async function submitLoan() {
   clearResult();
   const code = document.getElementById("customCode").value.trim();

@@ -24,11 +24,12 @@ h1 {
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 16px;
+  font-weight: bold;
 }
 
 .label {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -87,9 +88,9 @@ h1 {
   border: none;
   border-radius: 6px;
   background: #aa93ff;
-  color: #230a3b;
+  color: #fbfbf9;
   font: inherit;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
 }
